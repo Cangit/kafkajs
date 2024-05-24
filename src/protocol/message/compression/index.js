@@ -15,9 +15,7 @@ const Codecs = {
   [Types.Snappy]: () => {
     throw new KafkaJSNotImplemented('Snappy compression not implemented')
   },
-  [Types.LZ4]: () => {
-    throw new KafkaJSNotImplemented('LZ4 compression not implemented')
-  },
+  [Types.LZ4]: () => require('./lz4'),
   [Types.ZSTD]: () => {
     throw new KafkaJSNotImplemented('ZSTD compression not implemented')
   },

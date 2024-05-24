@@ -29,7 +29,6 @@ describe('Producer', () => {
 
   const codecsUsingExternalLibraries = [
     { name: 'snappy', codec: Compression.Types.Snappy },
-    { name: 'lz4', codec: Compression.Types.LZ4 },
     { name: 'zstd', codec: Compression.Types.ZSTD },
   ]
 
